@@ -94,8 +94,8 @@ public class MinioApplication {
 
 			// browse objects (recursively)
 			Iterable<Result<Item>> results =
-            minioClient.listObjects(
-                ListObjectsArgs.builder()
+			minioClient.listObjects(
+				ListObjectsArgs.builder()
 					.bucket(bucketName)
 					.recursive(true)
 					.build());
