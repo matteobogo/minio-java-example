@@ -102,6 +102,7 @@ public class MinioApplication {
 
 			for (Result<Item> result : results) {
 				Item item = result.get();
+				System.out.println(item.lastModified() + "\t" + item.size() + "\t" + item.objectName());
 			}
 
 			//get obj
